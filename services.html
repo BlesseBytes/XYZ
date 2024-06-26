@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #090909;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .business-name {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .main-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1, h2, p {
+            color: #007bff;
+        }
+
+        .service-card {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .footer {
+            background-color: #56595d;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo" onclick="goToHomePage()">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/302/343/non_2x/xyz-letter-logo-design-on-white-background-xyz-creative-initials-letter-logo-concept-xyz-letter-design-vector.jpg" alt="Brand Logo">
+        </div>
+        <div class="business-name">XYZ Business</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <h1>Our Services</h1>
+
+        <div class="service-card">
+            <h2>Consultation Services</h2>
+            <p>Our expert team provides comprehensive consultation services to guide your business towards success. We analyze your challenges, identify opportunities, and offer strategic solutions tailored to your needs.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Brand Development</h2>
+            <p>Transform your brand identity with our brand development services. We create unique and memorable brand experiences, including logo design, messaging strategies, and visual branding, to help you stand out in the market.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Custom Solutions</h2>
+            <p>Get personalized solutions for your specific business requirements. Our team excels in crafting custom solutions that address your challenges and leverage opportunities, ensuring optimal results for your business.</p>
+        </div>
+
+        <div class="service-card">
+            <h2>Market Research</h2>
+            <p>Stay ahead of the competition with our market research services. We gather valuable insights, analyze market trends, and provide data-driven recommendations to help you make informed decisions and drive growth.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 XYZ Business. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function goToHomePage() {
+            window.location.href = 'welcome.html';
+        }
+    </script>
+
+</body>
+</html>

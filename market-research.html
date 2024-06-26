@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Research Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #070707;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .business-name {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #faf7f7;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .research-info {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #3057d6;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2a5ac9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo" onclick="goToHomePage()">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/302/343/non_2x/xyz-letter-logo-design-on-white-background-xyz-creative-initials-letter-logo-concept-xyz-letter-design-vector.jpg" alt="Logo">
+        </div>
+        <h1>Market Research</h1>
+    </header>
+
+    <section>
+        <p>Welcome to our Market Research page. Explore valuable insights and data to make informed business decisions.</p>
+
+        <div class="research-info">
+            <h2>Why Market Research is Essential</h2>
+            <p>Market research helps businesses understand their target audience, identify opportunities, and stay ahead of market trends. Here's what we offer:</p>
+
+            <ul>
+                <li><strong>Consumer Behavior Analysis:</strong> Gain insights into the preferences and behaviors of your target audience.</li>
+                <li><strong>Competitor Analysis:</strong> Understand the strengths and weaknesses of your competitors in the market.</li>
+                <li><strong>Trend Identification:</strong> Stay updated on industry trends that may impact your business.</li>
+                <li><strong>Product and Service Evaluation:</strong> Evaluate the performance of your existing products or services.</li>
+                <li><strong>Market Entry Strategies:</strong> Develop effective strategies for entering new markets.</li>
+            </ul>
+        </div>
+
+        <button onclick="redirectToContactPage()">Contact Us for Market Research</button>
+    </section>
+
+    <script>
+        function goToHomePage() {
+            // Replace 'index.html' with the actual path or URL of your homepage
+            window.location.href = 'welcome.html';
+        }
+        function redirectToContactPage() {
+        // Replace 'contact.html' with the actual path or URL of your contact page
+        window.location.href = 'contact.html';
+        }
+    </script>
+
+</body>
+</html>

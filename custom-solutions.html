@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Solutions Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            text-align: right;
+            padding: 10px;
+            position: relative;
+        }
+
+        .logo {
+            width: 30px;
+            height: 30px;
+            border-radius: 5%;
+            overflow: hidden;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            cursor: pointer;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #1f60d1;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo" onclick="goToHomePage()">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/302/343/non_2x/xyz-letter-logo-design-on-white-background-xyz-creative-initials-letter-logo-concept-xyz-letter-design-vector.jpg" alt="Logo">
+        </div>
+        <h1>Custom Solutions</h1>
+    </header>
+
+    <section>
+        <p>At XYZ Business Agency, we understand that every business has unique challenges and goals. Our Custom Solutions are tailored to address your specific needs and drive success. Here's what we offer:</p>
+
+        <ul>
+            <li><strong>Strategic Planning:</strong> Developing a customized strategic plan aligned with your business objectives.</li>
+            <li><strong>Technology Integration:</strong> Implementing cutting-edge technologies to enhance your business processes.</li>
+            <li><strong>Workflow Optimization:</strong> Streamlining workflows to improve efficiency and productivity.</li>
+            <li><strong>Custom Software Development:</strong> Building bespoke software solutions tailored to your requirements.</li>
+            <li><strong>Consultation and Advisory:</strong> Providing expert advice and consultation for your business challenges.</li>
+        </ul>
+
+        <p>Our team of experts works closely with you to understand your unique requirements and deliver custom solutions that make a real impact on your business.</p>
+
+        <button onclick="redirectToContactPage()">Contact Us for Custom Solutions</button>
+    </section>
+
+    <script>
+        function goToHomePage() {
+            // Replace 'home.html' with the actual path or URL of your home page
+            window.location.href = 'welcome.html';
+        }
+        function redirectToContactPage() {
+        // Replace 'contact.html' with the actual path or URL of your contact page
+        window.location.href = 'contact.html';
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #e45005, #2005e7, #d0d7d8, #bc07ea, #35a9c6);
+            background-size: 400% 400%;
+            animation: gradientAnimation 5s ease infinite;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 100%;
+            }
+            100% {
+                background-position: 100% 0%;
+            }
+        }
+
+        header {
+            background-color: rgba(13, 14, 14, 0.9);
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .business-name {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .main-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .main-section img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .main-section img:hover {
+            transform: scale(1.1);
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .options button {
+            padding: 12px 24px;
+            margin: 0 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .options button:hover {
+            background-color: #030303;
+        }
+
+        .photo-list {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .photo-list img {
+            width: 40%;
+            border-radius: 10px;
+            margin: 0 5px;
+        }
+
+        .photo-list img:hover {
+            transform: scale(1.5);
+        }
+
+        .preview-content {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .preview-content h2 {
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+
+        .preview-content p {
+            color: #495057;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: rgba(52, 58, 64, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+
+<body>
+    <HEADER>
+        <div class="logo"><img src="https://static.vecteezy.com/system/resources/previews/007/302/343/non_2x/xyz-letter-logo-design-on-white-background-xyz-creative-initials-letter-logo-concept-xyz-letter-design-vector.jpg" alt="Logo"></div>
+        <div class="business-name">XYZ Business</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </HEADER>
+
+    <section class="main-section">
+        <img src="https://static.vecteezy.com/system/resources/previews/007/302/343/non_2x/xyz-letter-logo-design-on-white-background-xyz-creative-initials-letter-logo-concept-xyz-letter-design-vector.jpg" alt="Business Image">
+        <h1>Welcome to Our Website</h1>
+        <p>Welcome to XYZ Business Agency, where innovation meets strategy! We are a dynamic and forward-thinking business agency dedicated to helping businesses thrive in the digital age. At XYZ, we understand the ever-evolving landscape of the business world, and we are committed to providing cutting-edge solutions that drive success.</p>
+        
+        <div class="options">
+            <button id="consultationButton">Consultation Request</button>
+            <button id="brandDevelopmentButton">Brand Development</button>
+            <button id="customSolutionsButton">Custom Solutions</button>
+            <button id="marketResearchButton">Market Research</button>
+        </div>
+        <div class="photo-list">
+            <a href="https://www.amazon.com/Human-Resource-Management-Business-Context/dp/1843984040">
+                <img src="https://m.media-amazon.com/images/I/41IWE5x7YvL._AC_UF1000,1000_QL80_.jpg" alt="Photo 1">
+            </a>
+            <a href="https://www.amazon.com/Economics-Business-Context/dp/1861524005">
+                <img src="https://m.media-amazon.com/images/I/71HwGUSKa3L._AC_UF894,1000_QL80_.jpg" alt="Photo 2">
+            </a>
+            <a href="https://www.amazon.com/Business-Writers-Handbook-Gerald-Alred/dp/145767551X">
+                <img src="https://assets.bigcartel.com/product_images/279569084/1x_BWH_old.jpg?auto=format&fit=max&h=1000&w=1000" alt="Photo 3">
+            </a>
+        </div>
+        
+
+        <div class="preview-content">
+            <h2>Our Approach</h2>
+            <p>At XYZ Business Agency, our approach is rooted in innovation, collaboration, and results. We believe in crafting tailored solutions that align with the unique needs and goals of each client. Here's how we approach business:</p>
+
+            <h3>1. Developmental Business:</h3>
+            <p>We begin by gaining a deep understanding of your business, industry, and target audience. This foundational knowledge enables us to create strategies that are not only effective but also align with your brand identity.</p>
+
+            <h3>2. Collaboration and Communication:</h3>
+            <p>Collaboration is at the core of our approach. We work closely with our clients, fostering open communication and ensuring that your insights and feedback play a crucial role in the decision-making process.</p>
+
+            <h3>3. Innovative Solutions:</h3>
+            <p>We thrive on innovation. Our team stays abreast of the latest industry trends and technologies, allowing us to deliver cutting-edge solutions that give your business a competitive edge.</p>
+        </div>
+
+        <section class="main-section">
+            <!-- ... -->
+            <div class="options">
+                <!-- Add an ID to the button for easier targeting with JavaScript -->
+                <button id="Services">Sign Out</button>
+                <!-- ... other buttons ... -->
+            </div>
+            <!-- ... other content ... -->
+
+
+        </section>
+
+        <script>
+           // Add a click event listener to the "Sign Out" button
+           document.getElementById('Services').addEventListener('click', function() {
+                // Redirect to another page when the button is clicked
+                window.location.href = 'index.html'; 
+            });
+
+           
+            document.getElementById('consultationButton').addEventListener('click', function () {
+                window.location.href = 'consultation.html'; 
+            });
+
+            document.getElementById('brandDevelopmentButton').addEventListener('click', function () {
+                window.location.href = 'brand-development.html'; 
+            });
+
+            document.getElementById('customSolutionsButton').addEventListener('click', function () {
+                window.location.href = 'custom-solutions.html'; 
+            });
+
+            document.getElementById('marketResearchButton').addEventListener('click', function () {
+                window.location.href = 'market-research.html'; 
+            });
+        </script>
+
+    </section>
+    <footer>
+
+        <p>&copy; 2024 XYZ Business. All rights reserved.</p>
+        <button class="scroll-to-top" onclick="scrollToTop()">Scroll to Top</button>
+
+    </footer>
+</body>
+</html>

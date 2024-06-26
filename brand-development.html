@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand Development Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #060606;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 30px;
+            height: 30px;
+            border-radius: 5%;
+            overflow: hidden;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            color: #edeff1;
+            margin: 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo" onclick="goToHomePage()">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/302/343/non_2x/xyz-letter-logo-design-on-white-background-xyz-creative-initials-letter-logo-concept-xyz-letter-design-vector.jpg" alt="Brand Logo">
+        </div>
+        <h1>Brand Development</h1>
+    </header>
+
+    <section>
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/302/343/non_2x/xyz-letter-logo-design-on-white-background-xyz-creative-initials-letter-logo-concept-xyz-letter-design-vector.jpg" alt="Brand Logo">
+            <h1> XYZ Business</h1>
+        </div>
+
+        <p>At XYZ Business Agency, we specialize in creating strong and memorable brands that resonate with your target audience. Our Brand Development services encompass a strategic approach to building and refining your brand identity. Here's what we offer:</p>
+
+        <ul>
+            <li><strong>Brand Strategy:</strong> Crafting a comprehensive strategy to define your brand's purpose, values, and positioning in the market.</li>
+            <li><strong>Logo Design:</strong> Creating a unique and visually appealing logo that represents your brand identity.</li>
+            <li><strong>Messaging and Communication:</strong> Developing a consistent and compelling messaging strategy for your brand.</li>
+            <li><strong>Visual Branding:</strong> Designing consistent visual elements, including color schemes, typography, and imagery.</li>
+            <li><strong>Brand Guidelines:</strong> Documenting guidelines to maintain consistency across all brand touchpoints.</li>
+        </ul>
+
+        <p>Whether you are launching a new brand or redefining an existing one, our team is dedicated to ensuring that your brand stands out in a competitive market.</p>
+
+        <button onclick="redirectToContactPage()">Contact Us for Brand Development</button>
+
+    </section>
+
+    <script>
+        function goToHomePage() {
+        // Replace 'welcome.html' with the actual path or URL of your home page
+        window.location.href = 'welcome.html';
+    }
+
+    function redirectToContactPage() {
+        // Replace 'contact.html' with the actual path or URL of your contact page
+        window.location.href = 'contact.html';
+    }
+    </script>
+</body>
+</html>

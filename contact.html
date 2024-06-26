@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #090909;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .business-name {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .main-section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1, h2, p {
+            color: #007bff;
+        }
+
+        .contact-info {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .contact-info div {
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color:#56595d;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo" onclick="goToHomePage()">
+            <img src="https://static.vecteezy.com/system/resources/previews/007/302/343/non_2x/xyz-letter-logo-design-on-white-background-xyz-creative-initials-letter-logo-concept-xyz-letter-design-vector.jpg" alt="Brand Logo">
+        </div>
+        <div class="business-name">XYZ Business</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <h1>Contact Us</h1>
+        <p>Have questions or want to get in touch? Reach out to us using the information below:</p>
+
+        <div class="contact-info">
+            <div>
+                <h2>Address:</h2>
+                <p>N3 st 123 Main Street, BK2, Toulkork,  City PhnomPenh, Country Cambodia</p>
+            </div>
+
+            <div>
+                <h2>Email:</h2>
+                <p>XYZBusiness@gmail.com</p>
+            </div>
+
+            <div>
+                <h2>Phone:</h2>
+                <p>+855 70 628 832</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 XYZ Business. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function goToHomePage() {
+            // Replace 'welcome.html' with the actual path or URL of your home page
+            window.location.href = 'welcome.html';
+        }
+    </script>
+
+</body>
+</html>
